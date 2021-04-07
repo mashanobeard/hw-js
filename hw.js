@@ -77,19 +77,19 @@ let b7 = null == ''
 console.log (b7) // null ни к чему не приводится: false
 
 let b8 = !!"false" == !!"true"
-console.log (b8) // :true
+console.log (b8) // строки не пустые:true
 
 let b9 = ['x'] == 'x'
-console.log (b9) // :true
+console.log (b9) // элемент массива при сравнивании преобразуется в строку:true
 
 let b10 = [] + null + 1 
-console.log (b10) // преобразование в строку
+console.log (b10) // преобразование в строку: null1
 
 let b11 = 0 || "0" && {}
 console.log (b11) // :{}
 
 let b12 = [1,2,3] == [1,2,3]
-console.log (b12) // : false
+console.log (b12) // ссылочные типы(две разные ссылки): false
 
 //2
 let i = 3;
@@ -139,3 +139,5 @@ for (i=0; i<arr1.length; i++)
 {
     console.log (arr1[i])
 }
+
+
